@@ -2,7 +2,7 @@ Declarative Knowledge: Statements of Fact
 Imperative Knowledge: Refers to How-To Statements of Fact
 Binary Data, Computers as binary machines
 Types: int, float, string, tuple, list, dictionary, Boolean, object, method / function, combinations e.g. lists of ints, floats, strings, tuples, lists; dictionaries as key value pairs, value able to be a combined type; integer and floating point range and precision
-
+higher order, dynamic programming
 assignment LHS RHS bind variable id
 
 Conditionals, branching, loops
