@@ -1,0 +1,106 @@
+Notetaking, Introduction to Computation and Programming using Python
+
+Ch. 1:
+
+declarative knowledge
+
+imperative knowledge
+
+guess the square root by (guess + square/guess)/2
+
+75 + 100/75 / 2 75.75/2 
+37.1841
+
+Turing completeness
+
+Fixed program computer
+
+algorithm definition, as like a recipe, a simple sequence of steps with a flow of control (as in a flow chart) and execut
+
+computations
+
+infix operators
+literals
+
+syntax
+
+semantics
+
+static semantics
+
+    
+Ch. 2: 
+
+Objects Expressions and Numerical Types
+
+Scalar, non scalar
+
+integers, floating point numbers
+
+Boolean: True and False
+
+Operators and objects form expressions
+
+== != > >= < <= + * / // - ( ) **
+
+<< >> >>= <<= |= ^= ~= and or not
+
+is
+is not
+is in
+for x in
+if x is not
+if x is
+if x in y
+if not (x in y)
+
+reserved words
+
+and
+as
+assert
+async
+await
+break
+class
+continue
+def
+del
+elif
+else
+except
+False
+finally
+for
+from
+global
+if
+import
+in
+is
+lambda
+nonlocal
+None
+not
+or
+pass
+raise
+return
+True
+try
+while
+with
+yield
+
+BRANCHING 21
+
+straight line programs
+
+
+Ch. 3:
+    
+Ch 4:
+    
+Ch 5:
+    
+    
