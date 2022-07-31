@@ -231,6 +231,8 @@ Boolean: True and False
 Operators and objects form expressions
 
 == != > >= < <= + - * / // ( ) ** % =
+if x in y is not False
+if x != q is not False or y == r is True
 
 << >> & | ~ ^
 
