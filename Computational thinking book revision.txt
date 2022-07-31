@@ -112,7 +112,7 @@ approximation
 
 bisection search
 
-numbers, assignments, input outpht, comparisons, relations, looping constructs
+numbers, assignments, input output, comparisons, relations, looping constructs
 function definition, function parameters, invocation / call
 lambda abstraction
 test functions
@@ -355,6 +355,18 @@ Debugging
 -  Study events leading to an error
 -  "Why is it not working"
 -  "How can I fix my program"
+
+
+RETURN TO CHAPTERS 7 TO 9 LATER ON
+
+
+Chapter 10. Classes and Object-Oriented Programming (OO, UML)
+
+thinking about objects as collections of data and methods
+
+Type of an object
+__init__, __str__, __repr__, __gt__, __ge__, __lt__, __le__ etc ...
+
 
 
     
