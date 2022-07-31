@@ -311,8 +311,48 @@ methods.
 
 Chapter 5 -> review all definitions back to Ch. 0 and summarise definition
 
-Ch 4:
     
-Ch 5:
-    
+Ch 6.
+base case, recursive or induction case
+
+Definition of factorial recursively and iteratively
+
+Fibonacci numbers, fraction summation, sequences and series, harmonic sum
+
+Recursive implementation of Fibonacci numbers
+
+Palindrome Testing
+
+Review
+
+Ch. 7
+
+Modules and Files
+
+
+validity, modularity of tasks / specifications / function definitions, breaking up a task into smaller subtasks, example inputs, outputs
+
+Testing and Debugging Lecture 1 edX
+
+chart
+
+DEFENSIVE PROGRAMMING
+
+-    Write Specifications for Functions, Contextual Def'ns to accomplish task'
+-    Modularise programs (ize -ise British)
+-    Check conditions on inputs/outputs
+
+Testing / Validation
+
+-    Compare input and output to specs
+-    "It's not working"
+-    "How can I break my program?"
+
+Debugging
+
+-  Study events leading to an error
+-  "Why is it not working"
+-  "How can I fix my program"
+
+
     
