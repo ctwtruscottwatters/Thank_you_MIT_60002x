@@ -374,4 +374,76 @@ The interface provides an abstraction barrier
 
 Decomposition creates structure, abstraction suppresses detail (linearising and solving implementation into individual and comprehensive functions, objects, variables, and operators and branching structures, and loops)
 
-    
+defensive programming. unexpected condition
+
+exceptions
+
+IndexError
+NameError
+TypeError
+
+try:
+
+except ValueError:
+except IOError:
+except ZeroDivisionError:
+else:
+finally:
+
+ALL FOR ROTE MEMORISATION TERM FOR TERM, TYPE FOR TYPE, OPERATOR FOR OPERATOR, CLAUSE FOR CLAUSE, KEYWORD FOR KEYWORD and MIT syllabus implemented in Python
+
+Detour back to Newton Raphson
+
+successive approximation
+
+
+Approximation method, Newton's method. 
+
+while not true guess is answer
+guess = guess - (y(guess) / dy/dx(guess))
+
+Bisection Search
+
+guess = (high + low)/2.0
+    or
+take the average of guess ... as either half of guess as thw low or high point and divide guess by two
+g + (x/g)/2
+
+exhaustive enumeration
+
+for the range of possible values, set an epsilon between the entire range from the low point, increment it until it reachws the high point
+
+
+Monkey Sort
+
+|
+|   . .  /  .  . .. 
+| . . ./    .
+|    / .  .    . .
+|  /    .  .    .
+|/___________
+
+Complexity: 
+
+def monkey_sort(L):
+while not is_sorted(L):
+    random.sort(L)
+
+
+Review Google for implementations of Monkey Sort
+
+
+Bubble Sort
+
+def bubble_sort(L):
+    swap = False
+    while not swap:
+        swap = True
+            for j in range(1, len(L)):
+                if L[ j- 1 ] > L[ j ]:
+                    swap = False
+                    temp = L[ j ]
+                    L[ j ] = L [ j - 1 ]
+                    L[ j - 1 ] = temp
+                    
+Charles Truscott Watters MIT student
