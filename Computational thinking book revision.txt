@@ -553,5 +553,34 @@ Ch. 7 to 9
 
 Chapter 10. Classes and Object-Oriented Programming (OO, UML)
 
+Lists, Tuples, Strings, Integers, Floating Point types 
+
+... Everything is an object in Python
+
+Linked Lists
+
+Object Methods
+
+Setters / Getters
+
+Object Attributes
+
+Operator Overloading
+
+Difference btwn creating a class and using an instance of a class
+
+Creating a class, new instances of objects, with attributes, internal data representation and methods
+
+Abstract data representation
+
 Computational Complexity
-Charles Truscott Watters MIT student
+
+
+All notes typed on my Android Phone by thumb
+580 lines 
+
+Charles Truscott Watters
+Massachusetts Institute of Technology
+via edx.org August 2022
+
+Just passed the first undergrad Computer Science unit with 73% or a B
