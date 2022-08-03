@@ -360,8 +360,8 @@ Debugging
 RETURN TO CHAPTERS 7 TO 9 LATER ON
 
 
-Chapter 10. Classes and Object-Oriented Programming (OO, UML)
 
+Classes and Objects
 thinking about objects as collections of data and methods
 
 Type of an object
@@ -446,4 +446,112 @@ def bubble_sort(L):
                     L[ j ] = L [ j - 1 ]
                     L[ j - 1 ] = temp
                     
+                    
+Selection Sort
+
+def selectionsort(L):
+    end = 0
+    while end != len(L):
+        for i in range(end, len(L)):
+            if L[i] < L[end]:
+                L[end] = L[i]
+                L[i] = L[end]
+        end += 1
+        
+        
+Merge Sort
+
+
+def merge(left, right):
+    result = []
+    i, j = 0, 0
+    while (i < len(left)) and (j < (len(right))):
+        print("i: {} j: {}".format(i, j))
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        elif left[i] > right[j]:
+            result.append(right[j])
+            j += 1
+    while (i < len(left)):
+        result.append(left[i])
+        i += 1
+    while (j < len(right)):
+        result.append(right[j])
+        j += 1
+    print(result)
+    return result
+      
+      
+def merge_sort(L):
+    
+    if len(L) >= 2:
+        mid = len(L) // 2
+        print("mid: {}, {}, {}".format(mid, L[:mid], L[mid:]))
+        left = merge_sort(L[:mid])
+        right = merge_sort(L[mid:])
+        print(left, right)
+        return merge(left, right)
+    else:
+        return L[:]
+ 
+def main():
+    L = [2, 4, 8, 1, 7, 9, 3, 5]
+    print("Final merged list: {}".format(merge_sort(L)))
+    print("CTW Truscott Watters MIT Student")
+    
+    
+if __name__ == "__main__": main()
+
+
+MS OUTPUT
+
+mid: 4, [2, 4, 8, 1], [7, 9, 3, 5]
+mid: 2, [2, 4], [8, 1]
+mid: 1, [2], [4]
+[2] [4]
+i: 0 j: 0
+[2, 4]
+mid: 1, [8], [1]
+[8] [1]
+i: 0 j: 0
+[1, 8]
+[2, 4] [1, 8]
+i: 0 j: 0
+i: 0 j: 1
+i: 1 j: 1
+[1, 2, 4, 8]
+mid: 2, [7, 9], [3, 5]
+mid: 1, [7], [9]
+[7] [9]
+i: 0 j: 0
+[7, 9]
+mid: 1, [3], [5]
+[3] [5]
+i: 0 j: 0
+[3, 5]
+[7, 9] [3, 5]
+i: 0 j: 0
+i: 0 j: 1
+[3, 5, 7, 9]
+[1, 2, 4, 8] [3, 5, 7, 9]
+i: 0 j: 0
+i: 1 j: 0
+i: 2 j: 0
+i: 2 j: 1
+i: 3 j: 1
+i: 3 j: 2
+i: 3 j: 3
+[1, 2, 3, 4, 5, 7, 8, 9]
+Final merged list: [1, 2, 3, 4, 5, 7, 8, 9]
+CTW Truscott Watters MIT Student
+
+[Program finished]
+
+Ch. 7 to 9
+
+
+Chapter 10. Classes and Object-Oriented Programming (OO, UML)
+
+Computational Complexity
 Charles Truscott Watters MIT student
