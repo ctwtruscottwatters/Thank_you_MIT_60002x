@@ -1,0 +1,42 @@
+import numpy as np
+import math as m
+import datetime
+
+class Person(object):
+    def __init__(self, name):
+        self.name = str(name)
+        self.split = name.rindex(' ')
+        self.first_name = name[0:self.split]
+        self.record_created = datetime.date.today()
+        self.birthday = None
+        
+    def return_first_name(self):
+        return self.first_name
+    def days_since_born(self):
+        return datetime.date.today() - self.birthday
+class MITPerson(Person):
+    def __init__(self, name, inductionyear):
+        super().__init__(name)
+        self.inductionyear = inductionyear
+        self.grades = { "6.0001": None, "6.0002": None}
+
+def main():
+    dob = datetime.date(1993,1,13)
+    print(dob)
+    Charles = Person("Charles Truscott")
+    print(Charles.first_name)
+    MITStudent = MITPerson("Charles Truscott", 2022)
+    MITStudent.birthday = dob
+    MITStudent.grades["6.0001"] = "B"
+    MITStudent.grades["6.0002"] = "A"
+    print("The grades of {} are {} and {} and {} has been alive since {} or for {} long".format(MITStudent.name, MITStudent.grades["6.0001"], MITStudent.grades["6.0002"], MITStudent.first_name, MITStudent.birthday, MITStudent.days_since_born()))
+    
+    """ 1993-01-13
+Charles
+The grades of Charles Truscott are B and A and Charles has been alive since 1993-01-13 or for 10800 days, 0:00:00 long
+
+[Program finished]
+"""
+    
+    
+if __name__ == "__main__": main()
