@@ -48,8 +48,6 @@ Take the LB
 ...
 
 ...
-
-
 Take the RB
 Reached the end of a set
 The list of items at this stage of recursive call is:

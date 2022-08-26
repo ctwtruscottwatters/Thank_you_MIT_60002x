@@ -13,9 +13,9 @@ def main():
 	y_1 = []
 	x_2 = []
 	y_2 = []
-	for q in range(-360, 360 + 15, 15):
+	for q in range(-360, 360 + 5, 5):
 		x.append((q * (math.pi / 180)))
-	for r in range(-360, 360 + 15, 15):
+	for r in range(-360, 360 + 5, 5):
 		x_1.append((r * (math.pi / 180)))
 		x_2.append((r * (math.pi / 180)))
 		y.append(math.sin(r * (math.pi / 180)))
