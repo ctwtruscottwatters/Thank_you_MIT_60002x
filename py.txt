@@ -1,0 +1,95 @@
+declarative vs imperative knowledge
+
+int, float, string, set, tuple, list, dictionary, boolean, class, object, method, function, function invocation, expression, combination of types
+
++ - * / // % ** ( ) != == 
+and, or, not
+> >= < <=
+& | ^ ~ << >>
+. * ** [ ] [ : ] [ : : ] [][][]x : , =
+
+assert, global, nonlocal, pass, del
+break, continue, is, is not, in, else
+True, False, lambda, yield
+
+try, except, finally, else, errortype as e
+
+def function(args):
+	body
+	return
+abstraction, decomposition
+def main():
+	body
+if __name__ == "__main__": main()
+
+for x in range(start, stop, step):
+for y in iterable(e.g. list, tuple, set, string, dict):
+for x in a:
+	for y in b:
+while(Boolean):
+	while(Boolean):
+def recursive(a, b):
+	base case 1
+	base case 2
+	base case x
+	body
+	recursive call
+	return
+iteration, recursion
+
+if
+	if
+		if
+		elif
+		elif
+		else
+	elif
+	elif
+	else
+elif
+elif
+else
+
+match (object):
+	case x:
+	case y:
+	case z:
+branching, control flow
+
+Algorithmic Complexity
+	- random access machine
+	- step
+	- time constraint
+	- sizes of input treated arbitrarily large or small
+	- dominant term algebraic reduction, additive and multiplicative steps
+	- running time, actual and conceptual
+		- worst case, best case, avg case
+		- upper bound, lower bound
+	- counting operators, operations, loops, iteration, recursion, branches, conditionals
+	- O(n), asymptotic notation n approaches infinity
+	- theta(n), theta notation, n approaches zero and n approaches infinity
+	- operation leading dominant term of the complexity
+	
+Approximation, Sorting, Searching
+Exhaustive enumeration, Bisection Search, Newton-Raphson, Bubble Sort, Permutation Sort, Selection Sort, Merge Sort
+Program specification, systems theory, requirements analysis
+OO
+Polymorphism, inheritance, data and method attributes, magic methods, operator overloading, setters and getters, algorithms and data structures
+
+class ArithmeticalOperation(object):
+	def __init__(self, a, b):
+		self.a = a
+		self.b = b
+	def __repr__(self):
+		pass
+	def __str__(self):
+		pass
+	def add(self):
+		return self.a + self.b
+		
+class Fraction(ArithmeticalOperation):
+	def __init__(self, num, denom):
+		self.num = num
+		self.denom = denom
+	
+Standard Library

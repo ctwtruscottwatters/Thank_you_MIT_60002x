@@ -1,0 +1,73 @@
+declarative vs imperative
+int, float, string, set, tuple, list, dictionary, boolean, class, object, method, function, function invocation, expression, combination
+
++ - * / // % ** ( )
+!= ==
+and or not
+> >= < <=
+& | ^ ~ << >>
+. * ** 
+[ ] [ : ] [ : : ] [ ][ ][ ]x : , =
+
+True, False, lambda, yield, from import as
+break, continue, is, is not, in, else
+assert, global, nonlocal, pass, del
+
+try, except, finally, else, ErrorType as e, object method access dot operator
+
+def function(arguments):
+	body
+	return
+	
+abstraction, decomposition
+
+def main():
+	body
+if __name__ == "__main__": main()
+
+for x in range(start, stop, step):
+for x in iterable:
+for x in a:
+	for y in b:
+	
+while(Boolean):
+	while(Boolean):
+	
+def recursive(a, b):
+	base case 1:
+	base case 2:
+	base case x:
+	body
+	recursive call
+	return
+	
+iteration, recursion
+
+if (Boolean):
+	if (Boolean):
+		if (Boolean):
+		elif (Boolean):
+		elif (Boolean):
+		else:
+	elif (Boolean):
+	elif (Boolean):
+	else:
+elif (Boolean):
+elif (Boolean):
+else:
+
+match (object):
+	case x:
+	case y:
+	case z:
+	
+branching, control flow, conditionals
+
+Algorithmic Complexity (20 subheadings)
+Approximation methods, sorting, searching (7 subheadings)
+Program definition / specification, requirements analysis (20 subheadings)
+Object Oriented vs Procedural Programming, OO (7 subheadings and memorised syntax code snippets also)
+Python 3 Standard Library (categories and names and data and method attributes of the standard library)
+
+My memorised framework for Python after holding a certificate from MIT
+Charles Truscott Watters
