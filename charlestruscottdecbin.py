@@ -3,14 +3,145 @@ import numpy
 import pandas
 import scipy
 import sklearn
-# Thank you Massachusetts Institute of Technology, QS globally ranked #1 Higher Education Institution
-# Charles Truscott Watters, Byron Bay NSW 2481
-# 30th birthday on the 13th of January 2023
-# And in just under five weeks I start six-triple-zero-two 6.0002 or 6.002x undergrad
-# would be stoked to hold an MIT XSeries (via edX) certificate of Computational Thinking in Python
+# Thank you Massachusetts Institute of Technology,\n QS globally ranked #1 Higher Education Institution
+# Charles Thomas Wallace Truscott Watters
+# 9/09/2022, just under five weeks until 6.0002 to become an MIT alumni from an edX XSeries `Computational Thinking` certificate from MIT
+# Mid-day, eager for a Crown Lager
+"""
+Charles Thomas Wallace Truscott Watters, student at MIT.
 
+Massachusetts Institute of Technology. QS globally #1 ranked college
+Using recursion, 248124812481 in binary is:
+00000000000000000000000000111001110001010110010000101100111
+Using iteration, 2481 in hexadecimal is: 9B1
+Using iteration, 10041955 in binary is: 0000000000000000000000000000000000000000100110010011101001100011
+15 and 255 in hex and binary are:
+
+F and 0000000000000000000000000000000000000000000000000000000000001111
+
+and FF and 0000000000000000000000000000000000000000000000000000000011111111
+"""
+def return_hexadecimal_iter(number):
+    """ DOCSTRING: Inputs an integer and outputs a quadword. One parameter for an integer to return a quadword for. Charles Thomas Wallace Truscott Watters, Byron Bay NSW 2481 """
+    hexstr = ""
+    n = 16
+    for x in range(16, 0, -1):
+        for y in range(15, 0, -1):
+#            print("x: {} y: {} number: {} hexstr: {}".format(x, y, number, hexstr))
+#            print("number // y * n ** x: {} ".format(number // (y * (n ** x))))
+            if number // (y * (n ** x)) == 1 and y == 15:
+                hexstr += "F"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 14:
+                hexstr += "E"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 13:
+                hexstr += "D"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 12:
+                hexstr += "C"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 11:
+                hexstr += "B"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 10:
+                hexstr += "A"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 9:
+                hexstr += "9"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 8:
+                hexstr += "8"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 7:
+                hexstr += "7"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 6:
+                hexstr += "6"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 5:
+                hexstr += "5"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 4:
+                hexstr += "4"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 3:
+                hexstr += "3"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 2:
+                hexstr += "2"
+                number -= (y * (n ** x))
+                break
+            elif number // (y * (n ** x)) == 1 and y == 1:
+                hexstr += "1"
+                number -= (y * (n ** x))
+                break
+#    print(number)
+    if number // 15 == 1:
+        hexstr += "F"
+        number -= 15
+    elif number // 14 == 1:
+        hexstr += "E"
+        number -= 14
+    elif number // 13 == 1:
+        hexstr += "D"
+        number -= 13
+    elif number // 12 == 1:
+        hexstr += "C"
+        number -= 12
+    elif number // 11 == 1:
+        hexstr += "B"
+        number -= 11
+    elif number // 10 == 1:
+        hexstr += "A"
+        number -= 10
+    elif number // 9 == 1:
+        hexstr += "9"
+        number -= 9
+    elif number // 8 == 1:
+        hexstr += "8"
+        number -= 8
+    elif number // 7 == 1:
+        hexstr += "7"
+        number -= 7
+    elif number // 6 == 1:
+        hexstr += "6"
+        number -= 6
+    elif number // 5 == 1:
+        hexstr += "5"
+        number -= 5
+    elif number // 4 == 1:
+        hexstr += "4"
+        number -= number // 4
+    elif number // 3 == 1:
+        hexstr += "3"
+        number -= number // 3
+    elif number // 2 == 1:
+        hexstr += "2"
+        number -= number // 2
+    elif number // 1 == 1:
+        hexstr += "1"
+        number -= number // 1
+    elif number == 0:
+        binstr += "0"
+#    print(hexstr)
+    return hexstr
 def return_binary_recur(radice_recur, x=63, n=2, binstr=""):
-    print("radice: {} x: {} n: {} binstr: {}".format(radice_recur, x, 2, binstr))
+    """ DOCSTRING: Inputs a number to convert to binary. First parameter is used only, others set to default. Recursive definition of conversion to binary from Dewey Decimal or base-10. Charles Thomas Wallace Truscott Watters, Byron Bay NSW 2481 """
+#    print("radice: {} x: {} n: {} binstr: {}".format(radice_recur, x, 2, binstr))
     temp = radice_recur
     if temp == 1:
         binstr += str(1)
@@ -30,10 +161,12 @@ def return_binary_recur(radice_recur, x=63, n=2, binstr=""):
     if x == 1:
         return binstr
 def return_binary_iter(radice):
+    """ DOCSTRING: Inputs a number to convert to binary. First parameter is used only. Iterative definition of conversion to binary from Dewey Decimal or base-10. Charles Thomas Wallace Truscott Watters, Byron Bay NSW 2481 """
+
     n = 2
     binstr = str("")
-    for x in range(63, 1, -1):
-        print("n: {} x: {} n ** x: {} radice: {}; radice // n ** x: {}".format(n, x, n ** x, radice, radice // (n ** x)))
+    for x in range(63, 0, -1):
+#        print("n: {} x: {} n ** x: {} radice: {}; radice // n ** x: {}".format(n, x, n ** x, radice, radice // (n ** x)))
         if radice // (n ** x) == 1 and radice != 0:
             binstr += str(1)
             radice -= (n ** x)
@@ -44,9 +177,10 @@ def return_binary_iter(radice):
         radice -= 1
     else:
         binstr += str(0)
-    print(binstr)
+#    print(binstr)
     return binstr
 def return_binary(integer_n):
+    """ DOCSTRING: Inputs a number to convert to binary. Charles Thomas Wallace Truscott Watters, Byron Bay NSW 2481 """
     binary_string = ""
     if integer_n // 9223372036854775808 == 1 and integer_n != 0:
         binary_string += str(1)
@@ -369,157 +503,13 @@ def return_binary(integer_n):
     else:
         binary_string += str(0)
 
-    print(binary_string[::])
+    return binary_string
 
 def main():
-#    return_binary(93)
-#    print("\n")
-#    return_binary(9324815590)
-    print("9324815590 in binary is: {} ".format(return_binary_iter(9324815590)))
-    print("I love MIT. 100% qualified and certified and bonafide MIT certificate holder in Python")
-    print("Charles Truscott Watters. Byron Bay NSW 2481")
-    print("248124812481 in binary is: ")
-    return_binary_recur(2481248124812481, 63, 2, "")
-    """
-    ‭1000 1101 0000 1010 1110 1001 1001 0001 0100 0011 1100 1100 0001‬
-   0000000000000000000000000000000000000000000000000000000001011101
-
-
-0000000000000000101010101010110010101010101010101010101010101010
-The thread 'MainThread' (0x1) has exited with code 0 (0x0).
-The program 'python.exe' has exited with code 0 (0x0).
-"""
-"""
-0000000000000000000000000000000000000000000000000000000001011101
-
-
-0000000000000000000000000000010000101011110011010110010011100110
-n: 2 x: 63 n ** x: 9223372036854775808 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 62 n ** x: 4611686018427387904 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 61 n ** x: 2305843009213693952 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 60 n ** x: 1152921504606846976 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 59 n ** x: 576460752303423488 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 58 n ** x: 288230376151711744 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 57 n ** x: 144115188075855872 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 56 n ** x: 72057594037927936 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 55 n ** x: 36028797018963968 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 54 n ** x: 18014398509481984 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 53 n ** x: 9007199254740992 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 52 n ** x: 4503599627370496 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 51 n ** x: 2251799813685248 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 50 n ** x: 1125899906842624 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 49 n ** x: 562949953421312 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 48 n ** x: 281474976710656 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 47 n ** x: 140737488355328 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 46 n ** x: 70368744177664 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 45 n ** x: 35184372088832 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 44 n ** x: 17592186044416 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 43 n ** x: 8796093022208 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 42 n ** x: 4398046511104 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 41 n ** x: 2199023255552 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 40 n ** x: 1099511627776 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 39 n ** x: 549755813888 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 38 n ** x: 274877906944 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 37 n ** x: 137438953472 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 36 n ** x: 68719476736 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 35 n ** x: 34359738368 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 34 n ** x: 17179869184 radice: 9324815590; radice // n ** x: 0
-n: 2 x: 33 n ** x: 8589934592 radice: 9324815590; radice // n ** x: 1
-n: 2 x: 32 n ** x: 4294967296 radice: 734880998; radice // n ** x: 0
-n: 2 x: 31 n ** x: 2147483648 radice: 734880998; radice // n ** x: 0
-n: 2 x: 30 n ** x: 1073741824 radice: 734880998; radice // n ** x: 0
-n: 2 x: 29 n ** x: 536870912 radice: 734880998; radice // n ** x: 1
-n: 2 x: 28 n ** x: 268435456 radice: 198010086; radice // n ** x: 0
-n: 2 x: 27 n ** x: 134217728 radice: 198010086; radice // n ** x: 1
-n: 2 x: 26 n ** x: 67108864 radice: 63792358; radice // n ** x: 0
-n: 2 x: 25 n ** x: 33554432 radice: 63792358; radice // n ** x: 1
-n: 2 x: 24 n ** x: 16777216 radice: 30237926; radice // n ** x: 1
-n: 2 x: 23 n ** x: 8388608 radice: 13460710; radice // n ** x: 1
-n: 2 x: 22 n ** x: 4194304 radice: 5072102; radice // n ** x: 1
-n: 2 x: 21 n ** x: 2097152 radice: 877798; radice // n ** x: 0
-n: 2 x: 20 n ** x: 1048576 radice: 877798; radice // n ** x: 0
-n: 2 x: 19 n ** x: 524288 radice: 877798; radice // n ** x: 1
-n: 2 x: 18 n ** x: 262144 radice: 353510; radice // n ** x: 1
-n: 2 x: 17 n ** x: 131072 radice: 91366; radice // n ** x: 0
-n: 2 x: 16 n ** x: 65536 radice: 91366; radice // n ** x: 1
-n: 2 x: 15 n ** x: 32768 radice: 25830; radice // n ** x: 0
-n: 2 x: 14 n ** x: 16384 radice: 25830; radice // n ** x: 1
-n: 2 x: 13 n ** x: 8192 radice: 9446; radice // n ** x: 1
-n: 2 x: 12 n ** x: 4096 radice: 1254; radice // n ** x: 0
-n: 2 x: 11 n ** x: 2048 radice: 1254; radice // n ** x: 0
-n: 2 x: 10 n ** x: 1024 radice: 1254; radice // n ** x: 1
-n: 2 x: 9 n ** x: 512 radice: 230; radice // n ** x: 0
-n: 2 x: 8 n ** x: 256 radice: 230; radice // n ** x: 0
-n: 2 x: 7 n ** x: 128 radice: 230; radice // n ** x: 1
-n: 2 x: 6 n ** x: 64 radice: 102; radice // n ** x: 1
-n: 2 x: 5 n ** x: 32 radice: 38; radice // n ** x: 1
-n: 2 x: 4 n ** x: 16 radice: 6; radice // n ** x: 0
-n: 2 x: 3 n ** x: 8 radice: 6; radice // n ** x: 0
-n: 2 x: 2 n ** x: 4 radice: 6; radice // n ** x: 1
-000000000000000000000000000000100010101111001101011001001110010
-9324815590 in binary is: 000000000000000000000000000000100010101111001101011001001110010
-I love MIT. 100% qualified and certified and bonafide MIT certificate holder in Python
-Charles Truscott Watters. Byron Bay NSW 2481
-248124812481 in binary is:
-radice: 2481248124812481 x: 63 n: 2 binstr:
-radice: 2481248124812481 x: 62 n: 2 binstr: 0
-radice: 2481248124812481 x: 61 n: 2 binstr: 00
-radice: 2481248124812481 x: 60 n: 2 binstr: 000
-radice: 2481248124812481 x: 59 n: 2 binstr: 0000
-radice: 2481248124812481 x: 58 n: 2 binstr: 00000
-radice: 2481248124812481 x: 57 n: 2 binstr: 000000
-radice: 2481248124812481 x: 56 n: 2 binstr: 0000000
-radice: 2481248124812481 x: 55 n: 2 binstr: 00000000
-radice: 2481248124812481 x: 54 n: 2 binstr: 000000000
-radice: 2481248124812481 x: 53 n: 2 binstr: 0000000000
-radice: 2481248124812481 x: 52 n: 2 binstr: 00000000000
-radice: 2481248124812481 x: 51 n: 2 binstr: 000000000000
-radice: 229448311127233 x: 50 n: 2 binstr: 0000000000001
-radice: 229448311127233 x: 49 n: 2 binstr: 00000000000010
-radice: 229448311127233 x: 48 n: 2 binstr: 000000000000100
-radice: 229448311127233 x: 47 n: 2 binstr: 0000000000001000
-radice: 88710822771905 x: 46 n: 2 binstr: 00000000000010001
-radice: 18342078594241 x: 45 n: 2 binstr: 000000000000100011
-radice: 18342078594241 x: 44 n: 2 binstr: 0000000000001000110
-radice: 749892549825 x: 43 n: 2 binstr: 00000000000010001101
-radice: 749892549825 x: 42 n: 2 binstr: 000000000000100011010
-radice: 749892549825 x: 41 n: 2 binstr: 0000000000001000110100
-radice: 749892549825 x: 40 n: 2 binstr: 00000000000010001101000
-radice: 749892549825 x: 39 n: 2 binstr: 000000000000100011010000
-radice: 200136735937 x: 38 n: 2 binstr: 0000000000001000110100001
-radice: 200136735937 x: 37 n: 2 binstr: 00000000000010001101000010
-radice: 62697782465 x: 36 n: 2 binstr: 000000000000100011010000101
-radice: 62697782465 x: 35 n: 2 binstr: 0000000000001000110100001010
-radice: 28338044097 x: 34 n: 2 binstr: 00000000000010001101000010101
-radice: 11158174913 x: 33 n: 2 binstr: 000000000000100011010000101011
-radice: 2568240321 x: 32 n: 2 binstr: 0000000000001000110100001010111
-radice: 2568240321 x: 31 n: 2 binstr: 00000000000010001101000010101110
-radice: 420756673 x: 30 n: 2 binstr: 000000000000100011010000101011101
-radice: 420756673 x: 29 n: 2 binstr: 0000000000001000110100001010111010
-radice: 420756673 x: 28 n: 2 binstr: 00000000000010001101000010101110100
-radice: 152321217 x: 27 n: 2 binstr: 000000000000100011010000101011101001
-radice: 18103489 x: 26 n: 2 binstr: 0000000000001000110100001010111010011
-radice: 18103489 x: 25 n: 2 binstr: 00000000000010001101000010101110100110
-radice: 18103489 x: 24 n: 2 binstr: 000000000000100011010000101011101001100
-radice: 1326273 x: 23 n: 2 binstr: 0000000000001000110100001010111010011001
-radice: 1326273 x: 22 n: 2 binstr: 00000000000010001101000010101110100110010
-radice: 1326273 x: 21 n: 2 binstr: 000000000000100011010000101011101001100100
-radice: 1326273 x: 20 n: 2 binstr: 0000000000001000110100001010111010011001000
-radice: 277697 x: 19 n: 2 binstr: 00000000000010001101000010101110100110010001
-radice: 277697 x: 18 n: 2 binstr: 000000000000100011010000101011101001100100010
-radice: 15553 x: 17 n: 2 binstr: 0000000000001000110100001010111010011001000101
-radice: 15553 x: 16 n: 2 binstr: 00000000000010001101000010101110100110010001010
-radice: 15553 x: 15 n: 2 binstr: 000000000000100011010000101011101001100100010100
-radice: 15553 x: 14 n: 2 binstr: 0000000000001000110100001010111010011001000101000
-radice: 15553 x: 13 n: 2 binstr: 00000000000010001101000010101110100110010001010000
-radice: 7361 x: 12 n: 2 binstr: 000000000000100011010000101011101001100100010100001
-radice: 3265 x: 11 n: 2 binstr: 0000000000001000110100001010111010011001000101000011
-radice: 1217 x: 10 n: 2 binstr: 00000000000010001101000010101110100110010001010000111
-radice: 193 x: 9 n: 2 binstr: 000000000000100011010000101011101001100100010100001111
-radice: 193 x: 8 n: 2 binstr: 0000000000001000110100001010111010011001000101000011110
-radice: 193 x: 7 n: 2 binstr: 00000000000010001101000010101110100110010001010000111100
-radice: 65 x: 6 n: 2 binstr: 000000000000100011010000101011101001100100010100001111001
-radice: 1 x: 5 n: 2 binstr: 0000000000001000110100001010111010011001000101000011110011
-00000000000010001101000010101110100110010001010000111100111
-"""
+    print("Charles Thomas Wallace Truscott Watters, student at MIT.\n\nMassachusetts Institute of Technology. QS globally #1 ranked college")
+    print("Using recursion, 248124812481 in binary is: ")
+    return_binary_recur(248124812481, 63, 2, "")
+    print("Using iteration, 2481 in hexadecimal is: {}".format(return_hexadecimal_iter(2481)))
+    print("Using iteration, 10041955 in binary is: {}".format(return_binary_iter(10041955)))
+    print("15 and 255 in hex and binary are:\n\n{} and {}\n\nand {} and {}".format(return_hexadecimal_iter(15), return_binary_iter(15), return_hexadecimal_iter(255), return_binary_iter(255)))
 if __name__ == "__main__":main()
