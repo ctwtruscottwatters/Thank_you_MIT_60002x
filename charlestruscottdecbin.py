@@ -5,21 +5,30 @@ import scipy
 import sklearn
 # Thank you Massachusetts Institute of Technology,\n QS globally ranked #1 Higher Education Institution
 # Charles Thomas Wallace Truscott Watters
-# 9/09/2022, just under five weeks until 6.0002 to become an MIT alumni from an edX XSeries `Computational Thinking` certificate from MIT
-# Mid-day, eager for a Crown Lager
+# 10/09/2022 3:12 a.m.,  just under five weeks until 6.0002 to become an MIT alumni from an edX XSeries `Computational Thinking` certificate from MIT
+# I love you Tai, Kerri and Mark
+# Byron Bay NSW 2481
+# Educated at Byron Bay High School, TAFE NSW, Offensive Security, SCU 
+# and ultimately via edX at the Massachusetts Institute of Technology
+# At Byron High I gained my School Certificate (NSW), in 2015 completing an Offensive Security Certified Professional, two years later attending SCU Gold Coast for Biomedical Science and three years after that attending SCU for Foundation Mathematics, that included most invaluably secondary to higher mathematics and rearranging and solving equations (Newton's Law of Cooling, quadratic theorem, factoring, completing the square) and next carrying on from Offensive Security I gained a certificate of completion in Python from TAFE NSW 
+# and now I hold a certificate in Python from MIT, with fingers crossed to pass the capstone data science unit to earn the certificate of `Computational Thinking in Python` from Massachusetts Institute of Technology
+# If I ever get an Australian Passport issued to travel or migrate either need to obtain my 1999 passport in which I visit California, Santa Monica and Hawaii, or dig up my Byron Primary reports to (under AU law) confirm I have lived my entire life in Australia
+# Been on computers science dial up and Windows 95 in 1997 using Linknet, Byron Bay's first Internet Service Provider. didnt get ADSL1 until roughly 2004'
 """
 Charles Thomas Wallace Truscott Watters, student at MIT.
 
 Massachusetts Institute of Technology. QS globally #1 ranked college
 Using recursion, 248124812481 in binary is:
 00000000000000000000000000111001110001010110010000101100111
-Using iteration, 2481 in hexadecimal is: 9B1
+Using iteration, 248124812481 in hexadecimal is: 39C5642CC1
 Using iteration, 10041955 in binary is: 0000000000000000000000000000000000000000100110010011101001100011
 15 and 255 in hex and binary are:
 
 F and 0000000000000000000000000000000000000000000000000000000000001111
 
 and FF and 0000000000000000000000000000000000000000000000000000000011111111
+
+[Program finished]
 """
 def return_hexadecimal_iter(number):
     """ DOCSTRING: Inputs an integer and outputs a quadword. One parameter for an integer to return a quadword for. Charles Thomas Wallace Truscott Watters, Byron Bay NSW 2481 """
@@ -125,16 +134,16 @@ def return_hexadecimal_iter(number):
         number -= 5
     elif number // 4 == 1:
         hexstr += "4"
-        number -= number // 4
+        number -= 4
     elif number // 3 == 1:
         hexstr += "3"
-        number -= number // 3
+        number -= 3
     elif number // 2 == 1:
         hexstr += "2"
-        number -= number // 2
+        number -= 2
     elif number // 1 == 1:
         hexstr += "1"
-        number -= number // 1
+        number -= 1
     elif number == 0:
         binstr += "0"
 #    print(hexstr)
@@ -509,7 +518,7 @@ def main():
     print("Charles Thomas Wallace Truscott Watters, student at MIT.\n\nMassachusetts Institute of Technology. QS globally #1 ranked college")
     print("Using recursion, 248124812481 in binary is: ")
     return_binary_recur(248124812481, 63, 2, "")
-    print("Using iteration, 2481 in hexadecimal is: {}".format(return_hexadecimal_iter(2481)))
+    print("Using iteration, 248124812481 in hexadecimal is: {}".format(return_hexadecimal_iter(248124812481)))
     print("Using iteration, 10041955 in binary is: {}".format(return_binary_iter(10041955)))
     print("15 and 255 in hex and binary are:\n\n{} and {}\n\nand {} and {}".format(return_hexadecimal_iter(15), return_binary_iter(15), return_hexadecimal_iter(255), return_binary_iter(255)))
 if __name__ == "__main__":main()
