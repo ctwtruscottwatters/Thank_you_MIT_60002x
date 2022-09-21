@@ -1,95 +1,86 @@
-declarative vs imperative knowledge
+Massachusetts Institute of Technology
+Charles Truscott Watters
 
-int, float, string, set, tuple, list, dictionary, boolean, class, object, method, function, function invocation, expression, combination of types
+declarative versus imperative forms of knowledge
 
-+ - * / // % ** ( ) != == 
+declarative: refering to statements of fact
+imperative: refering to procedural methods of solving based on statements of fact
+
+int, float, string, set, tuple, list, dictionary, boolean, class, object, method, function, function invocation, combination of types, expression
+
++ - * / // % ** ( ) != ==
+
 and, or, not
+
 > >= < <=
+
 & | ^ ~ << >>
-. * ** [ ] [ : ] [ : : ] [][][]x : , =
 
-assert, global, nonlocal, pass, del
-break, continue, is, is not, in, else
-True, False, lambda, yield
+. * **
 
-try, except, finally, else, errortype as e
+[ ] [start:stop + 1] [start:stop + 1:step] [i][j][k]x 
 
-def function(args):
-	body
-	return
-abstraction, decomposition
-def main():
-	body
-if __name__ == "__main__": main()
+: , =
 
-for x in range(start, stop, step):
-for y in iterable(e.g. list, tuple, set, string, dict):
-for x in a:
-	for y in b:
-while(Boolean):
-	while(Boolean):
-def recursive(a, b):
-	base case 1
-	base case 2
-	base case x
-	body
-	recursive call
-	return
-iteration, recursion
+Addition, Subtraction, Multiplication, True Division, Floor Division, Remainder or Modulus, Exponentiation, Parentheses
 
-if
-	if
-		if
-		elif
-		elif
-		else
-	elif
-	elif
-	else
-elif
-elif
-else
+Inequality, Equality
 
-match (object):
-	case x:
-	case y:
-	case z:
-branching, control flow
+Logical AND, Logical OR, Logical NOT
 
-Algorithmic Complexity
-	- random access machine
-	- step
-	- time constraint
-	- sizes of input treated arbitrarily large or small
-	- dominant term algebraic reduction, additive and multiplicative steps
-	- running time, actual and conceptual
-		- worst case, best case, avg case
-		- upper bound, lower bound
-	- counting operators, operations, loops, iteration, recursion, branches, conditionals
-	- O(n), asymptotic notation n approaches infinity
-	- theta(n), theta notation, n approaches zero and n approaches infinity
-	- operation leading dominant term of the complexity
-	
-Approximation, Sorting, Searching
-Exhaustive enumeration, Bisection Search, Newton-Raphson, Bubble Sort, Permutation Sort, Selection Sort, Merge Sort
-Program specification, systems theory, requirements analysis
-OO
-Polymorphism, inheritance, data and method attributes, magic methods, operator overloading, setters and getters, algorithms and data structures
+Greater-than, Greater-than or equal-to, Less-than, Less-than or equal-to
 
-class ArithmeticalOperation(object):
-	def __init__(self, a, b):
-		self.a = a
-		self.b = b
-	def __repr__(self):
-		pass
-	def __str__(self):
-		pass
-	def add(self):
-		return self.a + self.b
-		
-class Fraction(ArithmeticalOperation):
-	def __init__(self, num, denom):
-		self.num = num
-		self.denom = denom
-	
-Standard Library
+Bitwise AND, OR, XOR, NOT
+
+Left Shift, Right Shift
+
+Dot, Unpacking, Packing
+
+Subscript, Subscript with splice, Subscript with double splice, Arbitrary length subscript
+
+Addition: Adds the first operand to the second operand and returns the result
+Subtraction: Subtracts the second operand from the first operand and returns the result (e.g. int or floating point)
+Multiplication: Multiplies the first operand by the second operand and returns the result
+True Division: Divides the first operand by the second operand (returns how many times the second operand needs to be multiplied to reach the first operand), with floating-point precision
+Floor Division: Divides the first operand by the second operand (returns how many times the second operand needs to be multiplied to reach the first operand), with integer precision
+Remainder or Modulus: Returns the remainder when the first operand is taken modulo the second operand, e.g. returns the remainder after the first operand is divided by the second operand
+IPython 8.2.0 -- An enhanced Interactive Python.
+
+10 % 5
+Out[1]: 0
+
+5 % 10
+Out[2]: 5
+
+99 % 200
+Out[3]: 99
+
+200 % 99
+Out[4]: 2
+
+99 * 2
+Out[5]: 198
+
+
+Exponentiation: Returns the first operand taken to the exponent as the second operand
+
+Parentheses: Used to group in prioritisation any group of expressions, e.g. used for order of precedence in all expressions and also arithmetical expressions (e.g. relational, logical, word-operators, function arguments)
+
+Inequality: Returns True or False, True if the operands on the LHS and RHS are not equal and False if the operands on the LHS and RHS are equal
+
+Equality: Returns True or False, True if the operands on the LHS and RHS are equal and False if the operands on the LHS and RHS are not equal
+
+Logical AND: Returns True if the Boolean objects on the LHS and RHS are both True (e.g. True if (True and True) and False if any other, (e.g. True and False, False and True or False and False))
+
+Logical OR: Returns True if at least one Boolean object on the LHS and RHS are True (e.g. True if (True and True), (True and False), (False and True)), False only if (False and False)
+
+Logical NOT: Negates the Truth value of a unary Boolean operand, e.g. not (True) == False (True), not (False) == (True) (True)
+
+Greater-than:
+
+Greater-than or equal-to:
+
+Less-than:
+
+Less-than or equal-to:
+
